@@ -33,7 +33,7 @@
     </issueManagement>
 
     <scm>
-        <developerConnection>scm:git:ssh://git@github.com:cvent/jedis.git</developerConnection>
+        <developerConnection>scm:git:ssh://git@github.com/cvent/jedis.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
