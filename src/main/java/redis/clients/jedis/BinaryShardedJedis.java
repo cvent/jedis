@@ -7,10 +7,10 @@ import java.util.Set;
 import java.util.regex.Pattern;
 
 import redis.clients.jedis.BinaryClient.LIST_POSITION;
+import redis.clients.util.CventSharded;
 import redis.clients.util.Hashing;
-import redis.clients.util.Sharded;
 
-public class BinaryShardedJedis extends Sharded<Jedis, JedisShardInfo>
+public class BinaryShardedJedis extends CventSharded<Jedis, JedisShardInfo>
 	implements BinaryJedisCommands {
     public BinaryShardedJedis(List<JedisShardInfo> shards) {
 	super(shards);
